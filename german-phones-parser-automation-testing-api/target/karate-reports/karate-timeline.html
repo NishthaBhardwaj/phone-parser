@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/navvish\/api\/automation\/fileupload\/deleteRequest\/deleteRequest[1:5]","start":1650830894939,"end":1650830898396,"title":"com\/navvish\/api\/automation\/fileupload\/deleteRequest\/deleteRequest[1:5] 01:38:14.939-01:38:18.396 Delete All The Tasks When Task Is Present"},{"id":2,"group":1,"content":"com\/navvish\/api\/automation\/fileupload\/deleteRequest\/deleteRequest[2:20]","start":1650830898407,"end":1650830899014,"title":"com\/navvish\/api\/automation\/fileupload\/deleteRequest\/deleteRequest[2:20] 01:38:18.407-01:38:19.014 Delete non-existing task"},{"id":3,"group":1,"content":"com\/navvish\/api\/automation\/fileupload\/fileUpload[1:5]","start":1650830890787,"end":1650830894026,"title":"com\/navvish\/api\/automation\/fileupload\/fileUpload[1:5] 01:38:10.787-01:38:14.026 Submit Good File"},{"id":4,"group":1,"content":"com\/navvish\/api\/automation\/fileupload\/fileUpload[2:14]","start":1650830894034,"end":1650830894621,"title":"com\/navvish\/api\/automation\/fileupload\/fileUpload[2:14] 01:38:14.034-01:38:14.621 Submit Bad File"},{"id":5,"group":1,"content":"com\/navvish\/api\/automation\/fileupload\/getrequest\/getRequest[1:5]","start":1650830899105,"end":1650830902899,"title":"com\/navvish\/api\/automation\/fileupload\/getrequest\/getRequest[1:5] 01:38:19.105-01:38:22.899 Get The valid Phone Numbers By Task ID"},{"id":6,"group":1,"content":"com\/navvish\/api\/automation\/fileupload\/getrequest\/getRequest[2:13]","start":1650830902904,"end":1650830903514,"title":"com\/navvish\/api\/automation\/fileupload\/getrequest\/getRequest[2:13] 01:38:22.904-01:38:23.514 Get All The Tasks"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

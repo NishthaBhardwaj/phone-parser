@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+
+  phones-parser:
+    image: nbhardwaj/german-phone-parser:mac
+    ports:
+      - "9000:8080"
+    networks:
+      - navvish-network
+
+networks:
+  navvish-network:
+
+
+

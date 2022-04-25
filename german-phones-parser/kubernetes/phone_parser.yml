@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phone-parse-deployment
+  labels:
+    app: phone-parser
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phone-parser
+  template:
+    metadata:
+      labels:
+        app: phone-parser
+    spec:
+      containers:
+        - name: phone-parser
+          image: nbhardwaj/german-phone-parser:2.2
+          ports:
+            - containerPort: 8080
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: phone-parse-service
+spec:
+  selector:
+    app: phone-parser
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 9000
+      targetPort: 8080
