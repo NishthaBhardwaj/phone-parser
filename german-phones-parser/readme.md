@@ -2,7 +2,11 @@
 
 ## Requirements
 
+<<<<<<< HEAD
 For building and running the application you need:
+=======
+Run com.navvish.germanphonesparser.GermanPhonesParserApplication as a Java Application.
+>>>>>>> 6b13050d0937e5fede08f62a51b2691adfe6ecea
 
 - [JDK 11](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3](https://maven.apache.org)
@@ -69,3 +73,9 @@ docker image rm <image-id>
 http://localhost:9000/swagger-ui.html
 
 
+<<<<<<< HEAD
+=======
+```json
+{"message":"Hello World, in28minutes"}
+```
+>>>>>>> 6b13050d0937e5fede08f62a51b2691adfe6ecea
