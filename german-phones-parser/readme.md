@@ -49,7 +49,15 @@ You should get a response similar to this:
 {healthy:true}
 ```
 
-cleaned up the resources by this command:
+
+
+## Swagger URL
+http://localhost:9000/swagger-ui.html
+
+###### Clean up the resources
+###### If docker-compose is used for deploying the application
+
+Use the following commands to clean up:
 
 ```bash
 docker-compose rm
@@ -62,7 +70,4 @@ docker images
 
 docker image rm <image-id>
 ```
-
-## Swagger URL
-http://localhost:9000/swagger-ui.html
 
