@@ -1,6 +1,6 @@
 package com.navvish.germanphonesparser.dao;
 
-import com.navvish.germanphonesparser.PhoneParserDto;
+import com.navvish.germanphonesparser.dto.PhoneParserDto;
 import com.navvish.germanphonesparser.exception.TaskNotFoundException;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Assertions;

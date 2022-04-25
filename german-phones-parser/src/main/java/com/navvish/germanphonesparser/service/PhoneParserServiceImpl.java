@@ -1,7 +1,7 @@
 package com.navvish.germanphonesparser.service;
 
-import com.navvish.germanphonesparser.PhoneParserDto;
 import com.navvish.germanphonesparser.dao.PhoneParserDao;
+import com.navvish.germanphonesparser.dto.PhoneParserDto;
 import com.navvish.germanphonesparser.exception.ValidPhoneNumbersNotFound;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,6 @@
 package com.navvish.germanphonesparser.controller;
 
-
-import com.navvish.germanphonesparser.PhoneParserDto;
+import com.navvish.germanphonesparser.dto.PhoneParserDto;
 import com.navvish.germanphonesparser.service.PhoneParserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -38,7 +37,7 @@ public class PhoneNumberParser {
     @ApiOperation(value = "Please upload a file in text format(Other formats are not supported)",
             notes = "Submit the file which contains German phone numbers. " +
                     " and get the Resource URL in response headers named Location. " +
-                    " Use this URL to getlet the valid German phone numbers.")
+                    " Use this URL to get the valid German phone numbers.")
     @PostMapping(path = "upload-file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<String> uploadFile(@RequestPart("file") @ApiParam(value = "Provide File", required = true) MultipartFile file) throws IOException {
 

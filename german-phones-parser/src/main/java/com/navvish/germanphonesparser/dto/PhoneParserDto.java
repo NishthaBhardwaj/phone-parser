@@ -1,4 +1,4 @@
-package com.navvish.germanphonesparser;
+package com.navvish.germanphonesparser.dto;
 
 import lombok.Builder;
 

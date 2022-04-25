@@ -1,6 +1,6 @@
 package com.navvish.germanphonesparser.service;
 
-import com.navvish.germanphonesparser.PhoneParserDto;
+import com.navvish.germanphonesparser.dto.PhoneParserDto;
 
 import java.util.Optional;
 import java.util.Random;

@@ -46,7 +46,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiDetails(){
         return new ApiInfo(
-                "German Phones Numbers Parser",
+                "German Phone Numbers Parser",
                 "NavVis Code Challenge",
                 "1.0",
                 "Testing..",
